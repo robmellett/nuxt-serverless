@@ -38,5 +38,14 @@ module.exports = {
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {},
+
+  // Serverless
+  performance: {
+    gzip: false
+  },
+  router: {
+    base: "/dev/"
+  },
+  dev: false
 };
