@@ -1,3 +1,4 @@
+/* eslint-disable nuxt/no-cjs-in-config */
 module.exports = {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -22,8 +23,10 @@ module.exports = {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
-  ],
+    "@nuxtjs/tailwindcss",
+    // Doc: https://github.com/nuxt-community/eslint-module
+    process.env.NODE_ENV !== "production" ? "@nuxtjs/eslint-module" : ""
+  ].filter(Boolean),
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
