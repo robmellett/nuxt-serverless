@@ -11,6 +11,10 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: ap-southeast-2
+  environment:
+    NODE_ENV: production
 
 # These are the functions that will run our app.
 # typically you need only one for our use-case.
