@@ -4,7 +4,7 @@ plugins:
   - serverless-s3-sync
   - serverless-apigw-binary
   - serverless-dotenv-plugin
-  - serverless-domain-manager
+  # - serverless-domain-manager
 
 provider:
   name: aws
@@ -33,15 +33,15 @@ package:
 custom:
   stackId: fgoryxk
 
-  customDomain:
-    domainName: ${self:service}-${self:provider.stage}.robmellett.dev
-    basePath: ''
-    stage: ${self:provider.stage}
-    createRoute53Record: false
-    endpointType: 'regional'
-    securityPolicy: tls_1_2
-    apiType: http
-    region: ${self:provider.region}
+  # customDomain:
+  #   domainName: ${self:service}-${self:provider.stage}.robmellett.dev
+  #   basePath: ''
+  #   stage: ${self:provider.stage}
+  #   createRoute53Record: false
+  #   endpointType: 'regional'
+  #   securityPolicy: tls_1_2
+  #   apiType: http
+  #   region: ${self:provider.region}
 
   buckets:
     ASSETS_BUCKET_NAME: ${self:service}-${self:custom.stackId}-${self:provider.stage}-assets
