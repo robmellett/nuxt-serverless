@@ -11,19 +11,19 @@ provider:
   stage: ${opt:stage, 'dev'}
   runtime: nodejs12.x
   environment:
-    NODE_ENV: 'production'
+    NODE_ENV: production
     API_URL: ${self:service}-${self:provider.stage}.robmellett.dev
 
 custom:
   customDomain:
     domainName: ${self:service}.robmellett.dev
-    basePath: 'dev'
-    stage: ${self:provider.stage}
+    basePath: ''
+    # stage: ${self:provider.stage}
     createRoute53Record: false
-    endpointType: 'regional'
-    securityPolicy: tls_1_2
-    apiType: http
-    region: ${self:provider.region}
+    # endpointType: 'regional'
+    # securityPolicy: tls_1_2
+    # apiType: http
+    # region: ${self:provider.region}
 
   apigwBinary:
     types:
