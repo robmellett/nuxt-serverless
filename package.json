@@ -7,7 +7,17 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "nuxt build && serverless deploy"
+    "offline": "NODE_ENV=development serverless offline start --dontPrintOutput",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "deploy": "yarn build && sls deploy"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
