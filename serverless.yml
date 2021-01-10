@@ -30,7 +30,8 @@ custom:
       - 'image/*'
   nuxt:
     version: v${file(./package.json):version}
-    bucketName: ${self:service}-${self:provider.stage} # Asset Path https://my-nuxt-project-prod.s3.amazonaws.com/v1.3.1/
+    # Asset Path https://my-nuxt-project-prod.s3.amazonaws.com/v1.3.1/
+    bucketName: ${self:service}-${self:provider.stage}
 
 resources:
   Resources:
