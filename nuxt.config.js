@@ -37,5 +37,7 @@ module.exports = {
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {},
+
+  telemetry: false
 };

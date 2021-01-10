@@ -16,8 +16,8 @@ provider:
 
 custom:
   customDomain:
-    domainName: ${self:service.name}.robmellett.dev
-    basePath: ''
+    domainName: ${self:service}.robmellett.dev
+    basePath: 'dev'
     stage: ${self:provider.stage}
     createRoute53Record: false
     endpointType: 'regional'
@@ -47,7 +47,7 @@ resources:
               - https://${self:service}-${self:provider.stage}.robmellett.dev
 
 functions:
-  nuxt:
+  web:
     timeout: 30
     handler: handler.render
     events:
