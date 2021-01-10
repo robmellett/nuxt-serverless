@@ -1,7 +1,7 @@
 service: nuxt-serverless
 
 plugins:
-  - serverless-s3-sync
+  # - serverless-s3-sync
   - serverless-apigw-binary
   - serverless-dotenv-plugin
   # - serverless-domain-manager
@@ -15,6 +15,7 @@ provider:
   region: ap-southeast-2
   environment:
     NODE_ENV: production
+    DOMAIN: nuxt-serverless.robmellett.dev
 
 # These are the functions that will run our app.
 # typically you need only one for our use-case.

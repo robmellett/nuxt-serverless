@@ -1,5 +1,7 @@
 /* eslint-disable nuxt/no-cjs-in-config */
 module.exports = {
+  mode: "universal",
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: "nuxt-serverless",
@@ -38,14 +40,16 @@ module.exports = {
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+
+  },
 
   // Serverless
   performance: {
     gzip: false
   },
   router: {
-    base: "/dev/"
+    base: "/"
   },
   dev: false
 };
