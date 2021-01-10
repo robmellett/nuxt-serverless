@@ -1,0 +1,31 @@
+service: nuxt-serverless
+
+plugins:
+  - serverless-s3-sync
+  - serverless-apigw-binary
+  - serverless-dotenv-plugin
+
+package:
+  individually: true
+  excludeDevDependencies: true
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: ${opt:stage, 'dev'}
+  region: ap-southeast-2
+
+custom:
+  stackId: nuxt-serverless-zknx7u
+
+  buckets:
+    ASSETS_BUCKET_NAME: ${self:service}-${self:custom.stackId}-${self:provider.stage}-assets
+    STATIC_BUCKET_NAME: ${self:service}-${self:custom.stackId}-${self:provider.stage}-static
+  s3Sync:
+    - bucketName: ${self:custom.buckets.ASSETS_BUCKET_NAME}
+      localDir: .nuxt/dist/client
+    - bucketName: ${self:custom.buckets.STATIC_BUCKET_NAME}
+      localDir: static
+  apigwBinary:
+    types:
+      - '*/*'
