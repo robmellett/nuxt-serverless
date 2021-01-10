@@ -10,7 +10,7 @@ plugins:
 # we are deploying on aws using the node 10.x runtime.
 provider:
   name: aws
-  runtime: nodejs15.x
+  runtime: nodejs12.x
 
 # These are the functions that will run our app.
 # typically you need only one for our use-case.
