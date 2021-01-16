@@ -1238,7 +1238,7 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/axios@^5.12.2":
+"@nuxtjs/axios@5.12.5":
   version "5.12.5"
   resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.12.5.tgz#d4a1003052d21e54d93d97a895ca84f58e4bc8d9"
   integrity sha512-KCZMLRZFYOKcGt9mKxJMH6UJMB6H6g+BF/YxXEYz3Urrf2U2XiNkj6rmBqgw0XLRY5XD9Wm8knTGp6955512fQ==
@@ -1256,7 +1256,7 @@
   dependencies:
     http-proxy-middleware "^1.0.6"
 
-"@nuxtjs/tailwindcss@^3.1.0":
+"@nuxtjs/tailwindcss@3.4.2":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-3.4.2.tgz#2376877b7e3fff35c044e99828d5e7cacfec5621"
   integrity sha512-Hv1b/4zYaffNc0JHss3jqKLZoPRQfG7upxGguP749Zx2VgMyFExeT3NMAxntLHctKvv/ohN+5kFGiewZGI5n2A==
@@ -3553,15 +3553,15 @@ core-js-compat@^3.8.0:
     browserslist "^4.16.0"
     semver "7.0.0"
 
+core-js@3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.2.tgz#0a1fd6709246da9ca8eff5bb0cbd15fba9ac7044"
+  integrity sha512-FfApuSRgrR6G5s58casCBd9M2k+4ikuu4wbW6pJyYU7bd9zvFc9qf7vr5xmrZOhT9nn+8uwlH1oRR9jTnFoA3A==
+
 core-js@^2.6.5:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
-
-core-js@^3.6.5:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.2.tgz#0a1fd6709246da9ca8eff5bb0cbd15fba9ac7044"
-  integrity sha512-FfApuSRgrR6G5s58casCBd9M2k+4ikuu4wbW6pJyYU7bd9zvFc9qf7vr5xmrZOhT9nn+8uwlH1oRR9jTnFoA3A==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -7508,7 +7508,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-start@^2.14.12:
+nuxt-start@2.14.12:
   version "2.14.12"
   resolved "https://registry.yarnpkg.com/nuxt-start/-/nuxt-start-2.14.12.tgz#b3b7662ab940179c85e6cabaab6107889799ec4f"
   integrity sha512-OGa6OVm6+36UPGrhfcRIq5RDWlTOd92M5AuFHsMluNAXHRwhwHGNINB3sRYyAyoedzeTNoTWEmjyb0EAmVeLFA==
@@ -7524,7 +7524,7 @@ nuxt-start@^2.14.12:
     vue-router "^3.4.9"
     vuex "^3.6.0"
 
-nuxt@^2.14.6:
+nuxt@2.14.12:
   version "2.14.12"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.14.12.tgz#836096ff62ba72554b73744d94f5547109e563f7"
   integrity sha512-tfGz7s0ahL6mCGzzVEWpHgv+/hekNXgY1fX0SBB0dvJKjVHKAdoMxaoHBYhoCYdNL2GNiNQncHRipxiEtuCtOQ==
@@ -9626,12 +9626,12 @@ server-destroy@^1.0.1:
   resolved "https://registry.yarnpkg.com/server-destroy/-/server-destroy-1.0.1.tgz#f13bf928e42b9c3e79383e61cc3998b5d14e6cdd"
   integrity sha1-8Tv5KOQrnD55OD5hzDmYtdFObN0=
 
-serverless-apigw-binary@^0.4.4:
+serverless-apigw-binary@0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/serverless-apigw-binary/-/serverless-apigw-binary-0.4.4.tgz#f3cffd8365322a2a1d8bde5fd94b306b7a64d4fb"
   integrity sha512-2DJmQTzeXa/+8u9ekReqf7j4gQjBtzQE4MK9nlOnEz4F7MVWCQXYlLPmf2TXSoxxJZzlWvIiNzCTq6vAT9F5FQ==
 
-serverless-domain-manager@^5.1.0:
+serverless-domain-manager@5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/serverless-domain-manager/-/serverless-domain-manager-5.1.0.tgz#44c975b4adeac6b32507c92313ee001735d56c55"
   integrity sha512-uGLGr9nWTupimWxVwz/2S/fK+YULsg8hQ0ZddS1DNerzctIVQBXVbLMGUJv34a9a5HV0YPvVqCA/JBNI7VOSvA==
@@ -9639,7 +9639,7 @@ serverless-domain-manager@^5.1.0:
     aws-sdk "^2.756.0"
     chalk "^4.1.0"
 
-serverless-dotenv-plugin@^3.1.0:
+serverless-dotenv-plugin@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/serverless-dotenv-plugin/-/serverless-dotenv-plugin-3.1.0.tgz#f1482a5e69b01cc4de8c6439bdd8c134fc923534"
   integrity sha512-R9Jld4a/hDDd0lHiSq9xQuFlhtfgXqKKmODrYp7115iQ9kgf16SMxZbxJ0Cb9GqL6/4+5GlS42iHxsqv8GxZeQ==
@@ -9648,7 +9648,7 @@ serverless-dotenv-plugin@^3.1.0:
     dotenv "^8.2.0"
     dotenv-expand "^5.1.0"
 
-serverless-nuxt-plugin@^1.2.0:
+serverless-nuxt-plugin@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/serverless-nuxt-plugin/-/serverless-nuxt-plugin-1.2.0.tgz#78014184c73ccf13226be62bca7eed29e756e510"
   integrity sha512-ljzRelpDgshMfSOubVyU0l6Puks9UPucL5drcP3QjMXyIWnELeZHJDkjfsH5MbF2mHjaCZc//ZNVinYfRRxHdA==
@@ -9658,7 +9658,7 @@ serverless-nuxt-plugin@^1.2.0:
     mime-types "^2.1.24"
     ms "^2.1.2"
 
-serverless-nuxt@^1.1.1:
+serverless-nuxt@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/serverless-nuxt/-/serverless-nuxt-1.1.1.tgz#f94d2ffb783b916758afac66711cfafd1191c136"
   integrity sha512-Eq7ij84LooKkEEmBPUDAcbLv6EyhAYu5bAdpoJD2N9+XVw5KwKEEgUpg8dkAkXkVvryhXZgUEXcBKOnhsqvOLw==
@@ -9666,7 +9666,7 @@ serverless-nuxt@^1.1.1:
     aws-serverless-express "^3.3.6"
     express "^4.16.4"
 
-serverless-s3-sync@^1.15.0:
+serverless-s3-sync@1.15.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/serverless-s3-sync/-/serverless-s3-sync-1.15.0.tgz#3bf83380af20aac8a0bfcf9016c2550494450adf"
   integrity sha512-OvNYrQSN/2Nk6mesg8jA4IIigckkTCKigjiC1ECQyPVDgSUHDeOIaLsOCV/4Cj+55OGIyVZRlYuvmkd4BASUIQ==
@@ -9677,7 +9677,7 @@ serverless-s3-sync@^1.15.0:
     mime "^2.4.4"
     minimatch "^3.0.4"
 
-serverless@^2.18.0:
+serverless@2.18.0:
   version "2.18.0"
   resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.18.0.tgz#f5224121bdce9ff073708302e2f6a863911adb8e"
   integrity sha512-xoZtcnYHsT5aTlPXWBUfTC+DjAG7GqiWd/gAeYAth259q2whCrLY0nyB+tFWviv7tizFmy98H32dV/BthzGjcg==
