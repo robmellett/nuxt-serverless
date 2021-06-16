@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "3.4.2",
-    "serverless": "2.20.1",
+    "serverless": "2.46.0",
     "serverless-nuxt-plugin": "1.2.0"
   }
 }
